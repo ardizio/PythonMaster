@@ -11,7 +11,7 @@ from typing import List
 
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-        res = ""
+        """ res = ""
         n = len(strs)
         strs.sort()
         first = strs[0]
@@ -21,6 +21,10 @@ class Solution:
                 return res
             else:
                 res = res + first[i]
+        return res """
+        res = ""
+        print(len(strs))
+        print("_______________________________________________")
         return res
         
         
