@@ -11,32 +11,30 @@ from typing import List
 
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-        """ res = ""
-        n = len(strs)
+        res = ""  # Initialize an empty string to store the longest common prefix.
+        n = len(strs)  # Get the number of strings in the input list.
+        
+        # Sort the input list to make it easier to compare the first and last strings.
         strs.sort()
-        first = strs[0]
-        last = strs[n-1]
+        
+        first = strs[0]  # Get the first (lexicographically smallest) string.
+        last = strs[n - 1]  # Get the last (lexicographically largest) string.
+        
+        # Iterate through the characters of the first string.
         for i in range(len(first)):
+            # Compare the characters of the first and last strings at the same position.
             if first[i] != last[i]:
+                # If a mismatch is found, return the current common prefix.
                 return res
             else:
+                # If the characters match, append the character to the common prefix.
                 res = res + first[i]
-        return res """
-        res = ""
-        print(len(strs))
-        print("_______________________________________________")
+        
+        # After the loop, return the longest common prefix found.
         return res
+
         
         
-        
-#         for i in range(len(strs[0])):
-#             for s in strs:
-#                 if i == len(s) or s[i] != strs[0][i]:
-#                     return res
-                
-#             res += strs[0][i]
-            
-#         return res
 
 # Test Case 1
 # Input: strs = ["flower","flow","flight"]
@@ -67,6 +65,6 @@ assert result4 == "cat", "Test Case 4 Failed"
 # Input: strs = ["programming","programmer","program"]
 # Expected Output: "pro" (Common prefix among all strings)
 result5 = solution.longestCommonPrefix(["programming","programmer","program"])
-assert result5 == "pro", "Test Case 5 Failed"
+assert result5 == "program", "Test Case 5 Failed"
 
 print("All test cases passed!")
