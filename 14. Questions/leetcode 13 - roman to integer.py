@@ -30,8 +30,10 @@ class Solution:
         res = 0
         
         for i in range(len(s)):
+            # check if next exitst   and check if roman nox < roman now+1
             if i+1 <len(s) and roman[s[i]] < roman[s[i+1]]:
-                res = res - roman[s[i]]
+                # tolgo il risultato attuale
+                res -=  roman[s[i]]
             else:
-                res = res + roman[s[i]]
+                res += roman[s[i]]
         return res
