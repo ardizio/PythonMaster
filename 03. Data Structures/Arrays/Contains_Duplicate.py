@@ -7,7 +7,18 @@
 #Input: [1,2,3,4]
 #Output: false
 
+array = [46,2,1,32,98,61,34,46]
+
 #As usual we'll get the naive approach out of the way first.
+def mnl(array):
+    for one in array:
+        for two in array:
+            if one == two:
+                return True
+    return False
+print(mnl(array))
+
+
 
 def brute_force_duplicate_search(array):
     for i in range(len(array)-1):
@@ -15,9 +26,6 @@ def brute_force_duplicate_search(array):
             if array[i] == array[j]:
                 return True
     return False
-
-array = [1,2,46,32,98,61,34,46]
-array = [1,2,46,32,98,1,34,46]
 
 print(brute_force_duplicate_search(array))
 
