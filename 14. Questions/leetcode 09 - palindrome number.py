@@ -21,9 +21,9 @@ class Solution:
 
         # Reverse the number.
         while c:
-            print("C:",c)
+            # shift b by one and add last c digit to it
             b = b * 10 + c % 10
-            print("B:",b)
+            print("C:",c," - B:",b)
             c //= 10
 
         # Check if the reversed number is equal to the original number.
