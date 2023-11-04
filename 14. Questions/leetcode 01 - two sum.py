@@ -1,4 +1,5 @@
 # add two numbers check if target | leetcode 01 | https://leetcode.com/problems/two-sum/
+from typing import List
 
 #O(n)^2 solution - brute force
 class Solution:
