@@ -37,3 +37,25 @@ class Solution:
             else:
                 res += roman[s[i]]
         return res
+    
+
+# Test Case 1
+# Input: s = "III"
+# Expected Output: 3 (III represents 3 in Roman numerals)
+solution = Solution()
+result1 = solution.romanToInt("III")
+assert result1 == 3, "Test Case 1 Failed"
+
+# Test Case 2
+# Input: s = "LVIII"
+# Expected Output: 58 (LVIII represents 58 in Roman numerals)
+result2 = solution.romanToInt("LVIII")
+assert result2 == 58, "Test Case 2 Failed"
+
+# Test Case 3
+# Input: s = "MCMXCIV"
+# Expected Output: 1994 (MCMXCIV represents 1994 in Roman numerals)
+result3 = solution.romanToInt("MCMXCIV")
+assert result3 == 1994, "Test Case 3 Failed"
+
+print("All test cases passed!")
