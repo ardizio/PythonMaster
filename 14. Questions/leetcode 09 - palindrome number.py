@@ -21,7 +21,9 @@ class Solution:
 
         # Reverse the number.
         while c:
+            print("C:",c)
             b = b * 10 + c % 10
+            print("B:",b)
             c //= 10
 
         # Check if the reversed number is equal to the original number.
