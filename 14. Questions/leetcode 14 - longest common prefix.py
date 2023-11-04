@@ -63,7 +63,7 @@ assert result4 == "cat", "Test Case 4 Failed"
 
 # Test Case 5
 # Input: strs = ["programming","programmer","program"]
-# Expected Output: "pro" (Common prefix among all strings)
+# Expected Output: "program" (Common prefix among all strings)
 result5 = solution.longestCommonPrefix(["programming","programmer","program"])
 assert result5 == "program", "Test Case 5 Failed"
 
