@@ -15,6 +15,8 @@ def is_permutation(str1, str2):
     for char in str2:
         char_count2[char] = char_count2.get(char, 0) + 1
 
+    print(char_count1)
+    print(char_count2)
     # Compare the character counts of both strings.
     return char_count1 == char_count2
 
