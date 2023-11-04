@@ -42,3 +42,5 @@ print(my_map.get("age"))   # Output: 25
 
 my_map.remove("name")
 print(my_map.get("name"))  # Output: None
+print(my_map.get("age"))  # Output: None
+
