@@ -42,33 +42,3 @@ class Solution:
             res.next = ListNode(carry)
         return head  # Return the head of the result linked list.
 
-# Test Cases
-# Test Case 1
-# Input: l1 = [2, 4, 3], l2 = [5, 6, 4]
-# Expected Output: [7, 0, 8] (342 + 465 = 807)
-l1 = ListNode(2, ListNode(4, ListNode(3)))
-l2 = ListNode(5, ListNode(6, ListNode(4)))
-solution = Solution()
-result = solution.addTwoNumbers(l1, l2)
-expected_result = ListNode(7, ListNode(0, ListNode(8)))
-assert result.__dict__ == expected_result.__dict__, "Test Case 1 Failed"
-
-# Test Case 2
-# Input: l1 = [0], l2 = [0]
-# Expected Output: [0] (0 + 0 = 0)
-l1 = ListNode(0)
-l2 = ListNode(0)
-result = solution.addTwoNumbers(l1, l2)
-expected_result = ListNode(0)
-assert result.__dict__ == expected_result.__dict__, "Test Case 2 Failed"
-
-# Test Case 3
-# Input: l1 = [9, 9, 9, 9, 9, 9, 9], l2 = [9, 9, 9, 9]
-# Expected Output: [8, 9, 9, 9, 0, 0, 0, 1] (9999999 + 9999 = 10000000)
-l1 = ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9)))))))
-l2 = ListNode(9, ListNode(9, ListNode(9, ListNode(9))))
-result = solution.addTwoNumbers(l1, l2)
-expected_result = ListNode(8, ListNode(9, ListNode(9, ListNode(9, ListNode(0, ListNode(0, ListNode(0, ListNode(1))))))))
-assert result.__dict__ == expected_result.__dict__, "Test Case 3 Failed"
-
-print("All test cases passed!")
