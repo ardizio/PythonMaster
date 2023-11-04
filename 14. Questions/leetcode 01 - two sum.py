@@ -21,3 +21,21 @@ class Solution:
                 return[prevMap[diff],i]
             prevMap[n] = i
         return
+    
+
+
+
+# Test Case 1: Brute Force Solution
+nums = [2, 7, 11, 15]
+target = 9
+solution1 = Solution()
+output1 = solution1.twoSum(nums, target)
+print("Brute Force Solution:", output1) 
+
+
+# Test Case 2: Hash Maps Solution
+nums = [3, 2, 4]
+target = 6
+solution2 = Solution()
+output2 = solution2.twoSum(nums, target)
+print("Hash Maps Solution:", output2)
