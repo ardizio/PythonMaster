@@ -10,8 +10,8 @@ class Solution:
                     return [i,j]
         return []
 
-#O(n) solution - hash maps
 
+#O(n) solution - hash maps
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         prevMap = {}
