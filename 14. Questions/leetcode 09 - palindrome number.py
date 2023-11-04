@@ -23,7 +23,8 @@ class Solution:
         while c:
             # shift b by one and add last c digit to it
             b = b * 10 + c % 10
-            print("C:",c," - B:",b)
+            #print("C:",c," - B:",b)
+            # integer dision to remove the last digit of a number
             c //= 10
 
         # Check if the reversed number is equal to the original number.
