@@ -9,17 +9,16 @@
 
 array = [46,2,1,32,98,61,34,46]
 
-#As usual we'll get the naive approach out of the way first.
-def mnl(array):
+def mine(array):
     for one in array:
         for two in array:
             if one == two:
                 return True
     return False
-print(mnl(array))
+print(mine(array))
 
 
-
+#As usual we'll get the naive approach out of the way first.
 def brute_force_duplicate_search(array):
     for i in range(len(array)-1):
         for j in range(i+1,len(array)):
