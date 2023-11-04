@@ -7,6 +7,8 @@ Questions: https://leetcode.com/problems/longest-common-prefix/
 
 """
 
+from typing import List
+
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         res = ""
@@ -31,3 +33,36 @@ class Solution:
 #             res += strs[0][i]
             
 #         return res
+
+# Test Case 1
+# Input: strs = ["flower","flow","flight"]
+# Expected Output: "fl" (Common prefix among all strings)
+solution = Solution()
+result1 = solution.longestCommonPrefix(["flower","flow","flight"])
+assert result1 == "fl", "Test Case 1 Failed"
+
+# Test Case 2
+# Input: strs = ["dog","racecar","car"]
+# Expected Output: "" (No common prefix among the strings)
+result2 = solution.longestCommonPrefix(["dog","racecar","car"])
+assert result2 == "", "Test Case 2 Failed"
+
+# Test Case 3
+# Input: strs = ["apple","appetizer","apparel"]
+# Expected Output: "app" (Common prefix among all strings)
+result3 = solution.longestCommonPrefix(["apple","appetizer","apparel"])
+assert result3 == "app", "Test Case 3 Failed"
+
+# Test Case 4
+# Input: strs = ["cat","caterpillar","catamaran"]
+# Expected Output: "cat" (Common prefix among all strings)
+result4 = solution.longestCommonPrefix(["cat","caterpillar","catamaran"])
+assert result4 == "cat", "Test Case 4 Failed"
+
+# Test Case 5
+# Input: strs = ["programming","programmer","program"]
+# Expected Output: "pro" (Common prefix among all strings)
+result5 = solution.longestCommonPrefix(["programming","programmer","program"])
+assert result5 == "pro", "Test Case 5 Failed"
+
+print("All test cases passed!")
