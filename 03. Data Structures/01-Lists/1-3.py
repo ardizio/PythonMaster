@@ -9,6 +9,7 @@ def is_permutation(str1, str2):
 
     # Count characters in the first string.
     for char in str1:
+                                # get element and add count
         char_count1[char] = char_count1.get(char, 0) + 1
 
     # Count characters in the second string.
@@ -21,10 +22,14 @@ def is_permutation(str1, str2):
     return char_count1 == char_count2
 
 # Example usage:
-str1 = "abc"
-str2 = "bca"
+str1 = "abcc"
+str2 = "bcac"
 print(is_permutation(str1, str2))  # True
 
 str1 = "abc"
 str2 = "def"
 print(is_permutation(str1, str2))  # False
+
+
+
+#{} comparable as unsorted
